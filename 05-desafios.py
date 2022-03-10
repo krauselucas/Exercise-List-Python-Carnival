@@ -13,34 +13,34 @@
 # Dica!
 # Pesquise sobre o módulo buit-in do Python chamado random
 
-# import random as rd
+import random as rd
 
-# restart = "S"
+restart = "S"
 
-# while restart == "S":
+while restart == "S":
 
-#     numero_sorteado = rd.randint(1,100)
+    numero_sorteado = rd.randint(1,100)
     
-#     numero_usuario = int(input("Digite um número entre 1 e 100: "))
-#     tentativas = 1
+    numero_usuario = int(input("Digite um número entre 1 e 100: "))
+    tentativas = 1
         
-#     while numero_sorteado != numero_usuario:
-#         while numero_usuario < 1 or numero_usuario > 100:
-#             numero_usuario = int(input("Digite um novo número, dessa vez, entre 1 e 100: "))
+    while numero_sorteado != numero_usuario:
+        while numero_usuario < 1 or numero_usuario > 100:
+            numero_usuario = int(input("Digite um novo número, dessa vez, entre 1 e 100: "))
             
-#         if numero_sorteado > numero_usuario:
-#             print("O número sorteado é maior.")
-#             numero_usuario = int(input("Digite outro número entre 1 e 100: "))
+        if numero_sorteado > numero_usuario:
+            print("O número sorteado é maior.")
+            numero_usuario = int(input("Digite outro número entre 1 e 100: "))
                 
-#         elif numero_sorteado < numero_usuario:
-#             print("O número sorteado é menor.")
-#             numero_usuario = int(input("Digite outro número entre 1 e 100: "))                
-#         tentativas = tentativas + 1
+        elif numero_sorteado < numero_usuario:
+            print("O número sorteado é menor.")
+            numero_usuario = int(input("Digite outro número entre 1 e 100: "))                
+        tentativas = tentativas + 1
 
-#     print(f"Parabéns! Você acertou o número sorteado: {numero_sorteado}.\nVocê precisou somente de {tentativas} tentativas.")
-#     restart = input("Para jogar de novo, digite 'S' e pressione Enter.").upper()
+    print(f"Parabéns! Você acertou o número sorteado: {numero_sorteado}.\nVocê precisou somente de {tentativas} tentativas.")
+    restart = input("Para jogar de novo, digite 'S' e pressione Enter.").upper()
 
-# print("Que pena, volte logo!")
+print("Que pena, volte logo!")
 
 # Desafio 2:
 # Implemente um jogo em que o usuário tenha que adivinhar o somatório de dois dados.
@@ -51,28 +51,28 @@
 # b.	Caso o usuário informe um número igual ao valor da soma, o jogo deve apresentar a mensagem “Parabéns! Você acertou a soma dos dados! O valor do primeiro dado é d1 e o do segundo é d2. ”, sendo d1 o valor do primeiro dado e d2 o valor do segundo dado
 # 4.	Ao final do jogo, deve-se questionar o usuário se ele deseja jogar novamente. Caso afirmativo, todo o processo deve ser repetido. Caso contrário, o jogo deve ser encerrado.
 
-# import random as rd
+import random as rd
 
-# restart = "S"
-# while restart == "S":
+restart = "S"
+while restart == "S":
 
-#     d1 = rd.randint(1,6)
-#     d2 = rd.randint(1,6)
-#     x = d1 + d2
+    d1 = rd.randint(1,6)
+    d2 = rd.randint(1,6)
+    x = d1 + d2
     
-#     numero_usuario = int(input("Digite um número entre 2 e 12: "))
+    numero_usuario = int(input("Digite um número entre 2 e 12: "))
 
-#     while numero_usuario < 2 or numero_usuario > 12:
-#         numero_usuario = int(input("Digite um outro número, dessa vez, entre 2 e 12: "))
+    while numero_usuario < 2 or numero_usuario > 12:
+        numero_usuario = int(input("Digite um outro número, dessa vez, entre 2 e 12: "))
 
-#     if x != numero_usuario:
-#         print(f"Você errou. A soma dos dados é {x}.\nO valor do primeiro dado é {d1} e o do segundo é {d2}.")
-#     else:
-#         print(f"Parabéns! Você acertou a soma dos dados!\nO valor do primeiro dado é {d1} e o do segundo é {d2}.")
+    if x != numero_usuario:
+        print(f"Você errou. A soma dos dados é {x}.\nO valor do primeiro dado é {d1} e o do segundo é {d2}.")
+    else:
+        print(f"Parabéns! Você acertou a soma dos dados!\nO valor do primeiro dado é {d1} e o do segundo é {d2}.")
 
-#     restart = input("Para jogar de novo, digite 'S' e pressione Enter.").upper()
+    restart = input("Para jogar de novo, digite 'S' e pressione Enter.").upper()
 
-# print("Jogo encerrado, até a próxima!")
+print("Jogo encerrado, até a próxima!")
 
 # Exercício 3:
 # Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
