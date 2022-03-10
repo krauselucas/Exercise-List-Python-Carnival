@@ -32,50 +32,50 @@
 # 4.	Quantos e quais estão matriculados EM AMBOS os cursos?
 # 5.	Quantos alunos estão matriculados somente em francês ou somente em inglês, mas não em ambos os cursos?
 
-# ingles = ["João Alves dos Santos", "Maria Magalhães", "Antônio da Silva Ferreira", "José Júnior Jarbas", "Henrique da Silva Sauro", "Joaquina Ferreira da Silva", "Fabiana Aparecida Bianco", "Marrone Gutierres", "Carlos Magno Farad", "Antônio da Silva Júnior Amaral"]
+ingles = ["João Alves dos Santos", "Maria Magalhães", "Antônio da Silva Ferreira", "José Júnior Jarbas", "Henrique da Silva Sauro", "Joaquina Ferreira da Silva", "Fabiana Aparecida Bianco", "Marrone Gutierres", "Carlos Magno Farad", "Antônio da Silva Júnior Amaral"]
 
-# frances = ["João Alves dos Santos", "Antônio da Silva Ferreira", "Fernanda Abdala Mohamed", "Abner Mignon Alib", "Alisson Figueiredo", "Henrique da Silva Sauro", "Maria Magalhães", "Marrone Gutierres", "Joaquina Ferreira da Silva"]
+frances = ["João Alves dos Santos", "Antônio da Silva Ferreira", "Fernanda Abdala Mohamed", "Abner Mignon Alib", "Alisson Figueiredo", "Henrique da Silva Sauro", "Maria Magalhães", "Marrone Gutierres", "Joaquina Ferreira da Silva"]
 
-# todos_alunos_com_duplicatas = ingles + frances
+todos_alunos_com_duplicatas = ingles + frances
 
-# todos_alunos = set(todos_alunos_com_duplicatas)
+todos_alunos = set(todos_alunos_com_duplicatas)
 
-# todos_alunos = list(todos_alunos)
+todos_alunos = list(todos_alunos)
 
-# apenas_ingles = list(set(todos_alunos) - set(frances))
+apenas_ingles = list(set(todos_alunos) - set(frances))
 
-# apenas_frances = list(set(todos_alunos) - set(ingles))
+apenas_frances = list(set(todos_alunos) - set(ingles))
 
-# ambos_cursos_sem_ingles = list(set(todos_alunos) - set(apenas_ingles))
+ambos_cursos_sem_ingles = list(set(todos_alunos) - set(apenas_ingles))
 
-# ambos_cursos = list(set(ambos_cursos_sem_ingles) - set(apenas_frances))
+ambos_cursos = list(set(ambos_cursos_sem_ingles) - set(apenas_frances))
 
-# apenas_frances_ingles = apenas_ingles + apenas_frances
+apenas_frances_ingles = apenas_ingles + apenas_frances
 
-# print(f"1. Estão matriculados na escola, no total, {len(todos_alunos)} alunos.")
+print(f"1. Estão matriculados na escola, no total, {len(todos_alunos)} alunos.")
 
-# print(f"2. Estão matriculados apenas em inglês, no total, {len(apenas_ingles)} alunos, sendo eles: {apenas_ingles}.")
+print(f"2. Estão matriculados apenas em inglês, no total, {len(apenas_ingles)} alunos, sendo eles: {apenas_ingles}.")
 
-# print(f"3. Estão matriculados apenas em frances, no total, {len(apenas_frances)} alunos, sendo eles: {apenas_frances}.")
+print(f"3. Estão matriculados apenas em frances, no total, {len(apenas_frances)} alunos, sendo eles: {apenas_frances}.")
 
-# print(f"4. Estão matriculados em ambos os cursos, no total, {len(ambos_cursos)} alunos, sendo eles: {ambos_cursos}.")
+print(f"4. Estão matriculados em ambos os cursos, no total, {len(ambos_cursos)} alunos, sendo eles: {ambos_cursos}.")
 
-# print(f"5. Estão matriculados somente em francês ou somente em inglês, mas não em ambos os cursos, no total, {len(apenas_frances_ingles)} alunos, sendo eles: {apenas_frances_ingles}.")
+print(f"5. Estão matriculados somente em francês ou somente em inglês, mas não em ambos os cursos, no total, {len(apenas_frances_ingles)} alunos, sendo eles: {apenas_frances_ingles}.")
 
 # Exercício 2:
 
 # Faça um programa que lê uma sigla de um estado do usuário e imprime na tela o nome completo do estado. Exemplo:
 
-# >>> Digite um estado: SP
-# >>> O nome completo do estado é São Paulo.
+>>> Digite um estado: SP
+>>> O nome completo do estado é São Paulo.
 
-# siglas_estados = {"AC": "Acre", "AL": "Alagoas", "AP": "Amapá", "AM": "Amazonas", "BA": "Bahia", "CE": "Ceará", "DF": "Distrito Federal", "ES": "Espírito Santo", "GO": "Goiás", "MA": "Maranhão", "MT": "Mato Grosso", "MS": "Mato Grosso do Sul", "MG": "Minas Gerais", "PA": "Pará", "PB": "Paraíba", "PR": "Paraná", "PE": "Pernambuco", "PI": "Piauí", "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte", "RS": "Rio Grande do Sul", "RO": "Rondônia", "RR": "Roraima", "SC": "Santa Catarina", "SP": "São Paulo", "SE": "Sergipe", "TO": "Tocantins"}
+siglas_estados = {"AC": "Acre", "AL": "Alagoas", "AP": "Amapá", "AM": "Amazonas", "BA": "Bahia", "CE": "Ceará", "DF": "Distrito Federal", "ES": "Espírito Santo", "GO": "Goiás", "MA": "Maranhão", "MT": "Mato Grosso", "MS": "Mato Grosso do Sul", "MG": "Minas Gerais", "PA": "Pará", "PB": "Paraíba", "PR": "Paraná", "PE": "Pernambuco", "PI": "Piauí", "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte", "RS": "Rio Grande do Sul", "RO": "Rondônia", "RR": "Roraima", "SC": "Santa Catarina", "SP": "São Paulo", "SE": "Sergipe", "TO": "Tocantins"}
 
-# sigla = input("Digite um estado: ")
+sigla = input("Digite um estado: ")
 
-# estado = siglas_estados[sigla]
+estado = siglas_estados[sigla]
 
-# print(f"O nome completo do estado é {estado}")
+print(f"O nome completo do estado é {estado}")
 
 # Exercício 3:
 
@@ -84,11 +84,11 @@
 # a saída deve ser 
 # >>> {“química”: 87, “física”: 83, matemática”: 81}
 
-# dictionary = {"matemática": 81, "física": 83, "química": 87}
+dictionary = {"matemática": 81, "física": 83, "química": 87}
 
-# dictionary_sorted = dict(sorted(dictionary.items(), key=lambda x: x[1], reverse = True))
+dictionary_sorted = dict(sorted(dictionary.items(), key=lambda x: x[1], reverse = True))
 
-# print(dictionary_sorted)
+print(dictionary_sorted)
 
 # Exercício 4:
 
@@ -97,17 +97,17 @@
 # A saída deverá ser
 # >>> {1: 8, 2: 4, 3: 6}
 
-# dictionary = {1: "vermelho", 2: "azul", 3: "marrom"}
+dictionary = {1: "vermelho", 2: "azul", 3: "marrom"}
 
-# len1 = len(dictionary[1])
+len1 = len(dictionary[1])
 
-# len2 = len(dictionary[2])
+len2 = len(dictionary[2])
 
-# len3 = len(dictionary[3])
+len3 = len(dictionary[3])
 
-# dictionary_numbers = dict([(1,len1), (2, len2), (3, len3)])
+dictionary_numbers = dict([(1,len1), (2, len2), (3, len3)])
 
-# print(dictionary_numbers)
+print(dictionary_numbers)
 
 # Exercício 5:
 
@@ -117,22 +117,22 @@
 # >>> Nota máxima -> Júnior : 80
 # >>> Nota mínima -> Theodoro : 20
 
-# dictionary_grades = {"Theodoro": 20, "Márcia": 50, "Júnior": 80}
+dictionary_grades = {"Theodoro": 20, "Márcia": 50, "Júnior": 80}
 
-# list_grades = list(dictionary_grades.values())
+list_grades = list(dictionary_grades.values())
 
-# list_names = list(dictionary_grades.keys())
+list_names = list(dictionary_grades.keys())
 
-# max_grade = max(list_grades)
+max_grade = max(list_grades)
 
-# min_grade = min(list_grades)
+min_grade = min(list_grades)
 
-# position_max_grade = list_grades.index(max_grade)
+position_max_grade = list_grades.index(max_grade)
 
-# position_min_grade = list_grades.index(min_grade)
+position_min_grade = list_grades.index(min_grade)
 
-# max_name = list_names[position_max_grade]
+max_name = list_names[position_max_grade]
 
-# min_name = list_names[position_min_grade]
+min_name = list_names[position_min_grade]
 
-# print(f"Nota máxima -> {max_name} : {max_grade} \nNota mínima -> {min_name} : {min_grade}")
+print(f"Nota máxima -> {max_name} : {max_grade} \nNota mínima -> {min_name} : {min_grade}")
